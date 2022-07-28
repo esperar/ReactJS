@@ -13,10 +13,29 @@
 <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
 <script>
   const root = document.getElementById('root');
-  const span = React.createElement(
-    'span' , 
-    {id : 'sexy-span'} , 
-    "I'm a span");
-  ReactDOM.render(span , root)
+  const h3 = React.createElement( 'h3' ,  { onmouseenter : () => console.log('mouse enter') } , "I'm a span");
+  const btn = React.createElement('button' ,  { onClick : () => console.log('click') } , 'Click Me');
+  const div = React.createElement('div' , null , [h3 , btn]);
+  ReactDOM.render(div , root)
 </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
