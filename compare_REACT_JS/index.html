@@ -15,23 +15,21 @@
 
 <script type="text/babel">
   const root = document.getElementById('root');
-  const Title = () => (
-    <h3 id = "title" onMouseEnter = {() => console.log('Mouse on')}>I'm a title</h3>
-    )
-  
-  const Button = () => (
-    <button onClick = { () => console.log("click") } style = { {backgroundColor : 'red'} }>Click Me</button>
-  )
 
-  const Container = () => (
-    <div>
-      <Title />  
-      <Button />
+  function App() {
+    let [counter , setCounter] = React.useState(0);
+    const onClick = () => {
+      setCounter(counter + 1);
+    }
+    return (
+      <div>
+      <h3>Total Click : {counter}</h3>
+      <button onClick = {onClick}>Click Me</button>
     </div>
-  )
+    );
+  }
 
-  ReactDOM.render(<Container /> , root);
-
+  ReactDOM.render(<App /> , root);
 </script>
 </html>
 
