@@ -8,4 +8,4 @@
 
 ### 타임라인
 - [JS와 React 비교하기](https://github.com/KIMHUEMANG/ReactJS/tree/master/compare_REACT_JS/index.html)
-- [Time Converter](https://github.com/KIMHUEMANG/ReactJS/tree/master/compare_REACT_JS/convert.html)
+- [Time Converter](https://github.com/KIMHUEMANG/ReactJS/tree/master/converter/convert.html)
